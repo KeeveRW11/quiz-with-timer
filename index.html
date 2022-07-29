@@ -7,13 +7,13 @@
     <title>Quiz Web App</title>
     <link rel="stylesheet" href="./Assets/cs/styles.css">
 </head>
-<body>
+<body onload="Start()">
+    
     <div class="quiz-box" id="quiz">
-
         <div class="quiz-header">
             <h2 id="quiz-questions">Questions</h2>
-            <ul>
-                <li>
+            <ul id="quiz-choices">
+                <!--<li>
                     <input type="radio" name="answers" class="answer" id="ans_a">
                     <label for="a" id="choice_a">Answer 1</label> 
                 </li>
@@ -28,16 +28,16 @@
                 <li>
                     <input type="radio" name="answers" class="answer" id="ans_d">
                     <label for="d" id="choice_d">Answer 4</label> 
-                </li>
+                </li>-->
             </ul>
         </div>
-        <button id="submit-button">Submit</button>
+        <button onclick="SubmitAnswer()" id="submit-button">Submit</button>
     </div>
     <div>
         <p id="timer">1:00</p>
     </div>
         
-    <script src="./Assets/js/game-logic.js"></script>
-    <script src="./Assets/js/game-questions.js"></script>
+    <script src="./Assets/js/game-score.js"></script>
+    
 </body>
 </html>
